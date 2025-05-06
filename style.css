@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Glockenspiel";
+  src: url("assets/fonts/Glockenspiel.ttf") format("truetype");
+}
+
+:root {
+  --accent-color: #9785e6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +16,51 @@
 body {
   background-color: #ececec;
   color: #333;
+}
+
+section {
+  height: 100vh;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Glockenspiel", sans-serif;
+  background-image: url("assets/images/landing_bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.landing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+}
+
+h1 {
+  font-size: 6rem;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  color: var(--accent-color);
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
