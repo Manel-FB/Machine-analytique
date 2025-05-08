@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <title>Charles Babbage et la Machine analytique</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="landing">
@@ -12,8 +18,12 @@
         Charles Babbage <br />
         et la Machine analytique
       </h1>
+      <a href="#first-section"
+        ><img class="scroll-arrow" src="assets/icons/down_arrow.svg"
+      /></a>
     </section>
-    <section>
+    <section id="first-section" class="babbage-section">
+      <div class="bg-overlay"></div>
       <p class="paragraph">
         <span class="date">1791</span>
         <span class="section-title">Charles Babbage</span>
@@ -25,6 +35,11 @@
           influencé le développement de l'informatique.</span
         >
       </p>
+      <img
+        class="img-babbage"
+        src="assets/images/babbage_portrait.jpg"
+        alt="Portrait de Charles Babbage"
+      />
     </section>
     <div id="cursor-box"></div>
     <script src="script.js"></script>
