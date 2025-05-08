@@ -5,6 +5,8 @@
 
 :root {
   --accent-color: #9785e6;
+  --color-dark: #101010;
+  --color-light: #ececec;
 }
 
 * {
@@ -19,15 +21,17 @@ html {
 }
 
 body {
-  background-color: #333;
-  color: #ececec;
+  color: var(--color-light);
+  background-color: var(--color-dark);
   font-family: "Bricolage Grotesque";
   font-weight: 200;
+  overflow-x: hidden;
 }
 
 section {
   height: 100vh;
   height: 100svh;
+  width: 100vw;
 }
 
 .landing {
@@ -48,6 +52,15 @@ section {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 200vw;
+  display: flex;
 }
 
 .scroll-arrow {
@@ -87,20 +100,58 @@ h1 {
   font-weight: 600;
 }
 
-.babbage-section {
-  background-color: #101010;
+.content {
+  font-size: 1.75rem;
+}
+
+section.babbage {
+  background-color: var(--color-dark);
   display: flex;
   gap: 3rem;
   align-items: center;
   justify-content: center;
 }
 
-.content {
-  font-size: 1.75rem;
+section.babbage .img-babbage {
+  width: 20rem;
 }
 
-.img-babbage {
-  width: 20rem;
+section.context {
+  color: var(--color-dark);
+  position: relative;
+}
+
+section.context > .paragraph {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  z-index: 1;
+}
+
+section.context .bg-img-wrapper {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.context .bg-img-wrapper > img {
+  width: 120%;
+}
+
+section.context .paragraph {
+  padding: 2rem;
+  background-color: var(--color-light);
+}
+
+section.context .section-title {
+  font-size: 2.25rem;
+}
+
+section.context .content {
+  font-size: 1.25rem;
+  font-family: "IBM Plex Mono";
 }
 
 #cursor-box {

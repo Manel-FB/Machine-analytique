@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="landing">
@@ -22,25 +26,47 @@
         ><img src="assets/icons/down_arrow.svg"
       /></a>
     </section>
-    <section id="first-section" class="babbage-section">
-      <p class="paragraph">
-        <span class="date">1791</span>
-        <span class="section-title">Charles Babbage</span>
-        <span class="content"
-          >Charles Babbage (1791-1871) est un mathématicien, inventeur et
-          ingénieur britannique, souvent considéré comme le "père de
-          l'ordinateur". Bien qu'il n'ait jamais terminé la construction
-          complète de cette machine de son vivant, ses idées ont profondément
-          influencé le développement de l'informatique.</span
-        >
-      </p>
-      <img
-        class="img-babbage"
-        src="assets/images/babbage_portrait.jpg"
-        alt="Portrait de Charles Babbage"
-      />
-    </section>
+    <div class="wrapper">
+      <div class="container">
+        <section id="first-section" class="babbage">
+          <p class="paragraph">
+            <span class="date">1791 - 1871</span>
+            <span class="section-title">Charles Babbage</span>
+            <span class="content">
+              Charles Babbage (1791-1871) est un mathématicien, inventeur et
+              ingénieur britannique, souvent considéré comme le "père de
+              l'ordinateur". Bien qu'il n'ait jamais terminé la construction
+              complète de cette machine de son vivant, ses idées ont
+              profondément influencé le développement de l'informatique.
+            </span>
+          </p>
+          <img
+            class="img-babbage"
+            src="assets/images/babbage_portrait.jpg"
+            alt="Portrait de Charles Babbage"
+          />
+        </section>
+        <section class="context">
+          <div class="bg-img-wrapper">
+            <img src="assets/images/context_background.png" />
+          </div>
+          <p class="paragraph">
+            <span class="section-title">Contexte historique</span>
+            <span class="content">
+              Au début du XIXe siècle, les calculs mathématiques étaient
+              effectués manuellement, ce qui entraînait de nombreuses erreurs.
+              Babbage, mathématicien britannique, avait déjà conçu la machine à
+              différences pour automatiser ces calculs. Cependant, il envisagea
+              une machine plus avancée : la machine analytique, capable de
+              réaliser des opérations complexes et d'être programmée.
+            </span>
+          </p>
+        </section>
+      </div>
+    </div>
     <div id="cursor-box"></div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
