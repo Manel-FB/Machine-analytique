@@ -133,7 +133,6 @@ section.context .bg-img-wrapper {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 section.context .bg-img-wrapper > img {

@@ -1,7 +1,7 @@
 const cursorBox = document.getElementById("cursor-box");
 function updateCursor(e) {
-  cursorBox.style.left = `calc(${e.clientX}px)`;
-  cursorBox.style.top = `calc(${e.clientY}px)`;
+  cursorBox.style.left = `${e.clientX}px`;
+  cursorBox.style.top = `${e.clientY}px`;
 }
 
 document.addEventListener("mousemove", (e) => {
@@ -19,20 +19,44 @@ links.forEach((link) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger);
+const scrollArrow = document.querySelector(".scroll-arrow");
+scrollArrow.addEventListener("mousedown", () => {
+  gsap.scrollTo("#first-section");
+});
 
-  const container = document.querySelector(".container");
-  const sections = gsap.utils.toArray(".container section");
+gsap.registerPlugin(ScrollTrigger);
 
-  let scrollTween = gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
+const container = document.querySelector(".container");
+
+const sections = gsap.utils.toArray(".container section");
+const sectionWidth = sections[0].offsetWidth;
+console.log(sectionWidth);
+console.log(container.offsetWidth);
+
+let scrollTween = gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    end: () => container.offsetWidth,
+  },
+});
+
+gsap.fromTo(
+  ".bg-img-wrapper img",
+  { x: -200 },
+  {
+    x: 0,
     ease: "none",
     scrollTrigger: {
-      trigger: ".container",
-      pin: true,
-      scrub: 0.5,
-      end: "+=1500",
+      trigger: ".bg-img-wrapper",
+      start: "top top",
+      end: `${container.offsetWidth}px bottom`,
+      scrub: 1,
+      markers: true,
     },
-  });
-});
+  }
+);
