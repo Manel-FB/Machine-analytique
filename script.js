@@ -54,9 +54,8 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".bg-img-wrapper",
       start: "top top",
-      end: `${container.offsetWidth}px bottom`,
+      end: () => `${container.offsetWidth}px bottom`,
       scrub: 1,
-      markers: true,
     },
   }
 );
