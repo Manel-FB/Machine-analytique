@@ -16,7 +16,11 @@ html {
 
 body {
   color: var(--color-light);
-  background-color: #343135;
+  /* background-color: #343135; */
+  background: linear-gradient(hsla(20, 14%, 4%, 0.95), hsla(20, 14%, 4%, 0.95)),
+    url("assets/images/library-1834222_1920.jpg");
+  background-size: cover;
+  background-position: center;
   font-family: "Bricolage Grotesque";
   font-weight: 200;
   overflow-x: hidden;
@@ -25,6 +29,12 @@ body {
 
 a {
   color: rgb(66, 170, 255);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 main {
@@ -38,19 +48,24 @@ main {
   gap: 2rem;
 }
 
+.references ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .references a {
   text-decoration: none;
+  width: fit-content;
+}
+
+.references a:hover {
+  text-decoration: underline;
 }
 
 .references li {
-  list-style-type: none;
-}
-
-.references li::before {
-  content: "~";
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-  text-decoration: none;
+  list-style-type: "~ ";
+  list-style-position: inside;
+  margin-bottom: 0.4rem;
 }
 
 table {
