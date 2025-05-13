@@ -1,0 +1,72 @@
+:root {
+  --accent-color: #9785e6;
+  --color-dark: #101010;
+  --color-light: #ececec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-light);
+  background-color: #343135;
+  font-family: "Bricolage Grotesque";
+  font-weight: 200;
+  overflow-x: hidden;
+  min-height: 100svh;
+}
+
+a {
+  color: rgb(66, 170, 255);
+}
+
+main {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  justify-content: center;
+  height: 100vh;
+  height: 100svh;
+  gap: 2rem;
+}
+
+.references a {
+  text-decoration: none;
+}
+
+.references li {
+  list-style-type: none;
+}
+
+.references li::before {
+  content: "~";
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+table {
+  border: var(--color-dark) solid 1px;
+}
+
+table td {
+  padding: 0.25rem;
+  border: var(--color-dark) solid 1px;
+}
+
+table thead {
+  font-weight: 600;
+  background-color: hsl(0 0 0 / 0.3);
+}
+
+table tbody {
+  background-color: hsl(0 0 0 / 0.1);
+}
