@@ -17,7 +17,11 @@ html {
 body {
   color: var(--color-light);
   /* background-color: #343135; */
-  background: linear-gradient(hsla(20, 14%, 4%, 0.95), hsla(20, 14%, 4%, 0.95)),
+  background: linear-gradient(
+      to right,
+      hsla(20, 30%, 10%, 0.95),
+      hsla(20, 80%, 2%, 0.95)
+    ),
     url("assets/images/library-1834222_1920.jpg");
   background-size: cover;
   background-position: center;

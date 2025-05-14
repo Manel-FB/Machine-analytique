@@ -33,6 +33,8 @@ const sectionWidth = sections[0].offsetWidth;
 console.log(sectionWidth);
 console.log(container.offsetWidth);
 
+const scrollSpeedCoeff = 0.85;
+
 let scrollTween = gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
   ease: "none",
@@ -41,20 +43,20 @@ let scrollTween = gsap.to(sections, {
     pin: true,
     scrub: 1,
     snap: 1 / (sections.length - 1),
-    end: () => container.offsetWidth,
+    end: () => container.offsetWidth * scrollSpeedCoeff,
   },
 });
 
 gsap.fromTo(
   ".bg-img-wrapper img",
-  { x: -200 },
+  { x: -100 },
   {
-    x: 0,
+    x: 100,
     ease: "none",
     scrollTrigger: {
       trigger: ".bg-img-wrapper",
       start: "top top",
-      end: () => `${container.offsetWidth}px bottom`,
+      end: () => `${container.offsetWidth * scrollSpeedCoeff}px bottom`,
       scrub: 1,
     },
   }
