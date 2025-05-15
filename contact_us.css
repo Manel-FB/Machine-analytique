@@ -27,26 +27,28 @@ body {
   background-position: center;
   font-family: "Bricolage Grotesque";
   font-weight: 200;
-  height: 100%;
-}
-
-.h1-wrapper {
-  display: flex;
-  align-items: center;
-  margin-right: 3rem;
-}
-
-h1 {
-  font-size: 3rem;
+  height: 100svh;
+  height: 100vh;
 }
 
 main {
   width: 100%;
   height: 100%;
   display: flex;
+  gap: 3rem;
   flex: 1;
   justify-content: center;
-  margin: 5rem 3rem 3rem;
+  padding: 5rem 3rem 3rem;
+}
+
+.h1-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .card {
@@ -59,7 +61,7 @@ main {
     hsl(264, 80%, 20%) 100%
   );
   font-size: 1.25rem;
-  width: 40vw;
+  width: 60vw;
 }
 
 h2 {
