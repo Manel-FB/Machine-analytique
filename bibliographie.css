@@ -1,5 +1,6 @@
 :root {
   --accent-color: #9785e6;
+  --link-color: rgb(66, 170, 255);
   --color-dark: #101010;
   --color-light: #ececec;
 }
@@ -32,7 +33,7 @@ body {
 }
 
 a {
-  color: rgb(66, 170, 255);
+  color: var(--link-color);
 }
 
 h2 {

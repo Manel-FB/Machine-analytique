@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="contact_us.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a href="index.html">
+          <li>Accueil</li>
+        </a>
+        <a href="quiz.html">
+          <li>Quiz</li>
+        </a>
+        <a href="bibliographie.html">
+          <li>Bibliographie</li>
+        </a>
+      </ul>
+    </nav>
+    <main>
+      <div class="h1-wrapper">
+        <h1>Vous souhaitez nous faire part d'une idée ?</h1>
+      </div>
+      <div class="card">
+        <h2>Nous contacter</h2>
+        <form>
+          <div>
+            <label for="reason">
+              Pour quelle(s) raison(s) nous contacter-vous ?
+            </label>
+            <br />
+            <select id="reason" name="reason">
+              <option value="question">J'ai une question</option>
+              <option value="suggestion">J'ai une suggestion</option>
+              <option value="bug">J'ai trouvé un bug</option>
+              <option value="copyright">
+                J'ai une réclamation à faire (copyright)
+              </option>
+              <option value="other">Autre</option>
+            </select>
+          </div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Votre nom"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre adresse e-mail"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Votre message"
+            required
+          ></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
