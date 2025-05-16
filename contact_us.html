@@ -24,6 +24,9 @@
         <a href="bibliographie.html">
           <li>Bibliographie</li>
         </a>
+        <a href="contact_us.html">
+          <li>Contact</li>
+        </a>
       </ul>
     </nav>
     <main>
@@ -32,7 +35,12 @@
       </div>
       <div id="contactForm" class="card">
         <h2>Nous contacter</h2>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="7388a9f5-d886-43eb-880b-fe87856fba57"
+          />
           <div>
             <label for="reason">
               Pour quelle(s) raison(s) souhaitez-vous nous contacter ?
@@ -68,6 +76,12 @@
             placeholder="Votre message"
             required
           ></textarea>
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
           <button type="submit">Envoyer</button>
         </form>
       </div>

@@ -1,5 +1,6 @@
 :root {
-  --accent-color: #9785e6;
+  --accent-color: #907cff;
+  --accent-color-hover: #7c55f0;
   --link-color: rgb(66, 170, 255);
   --color-dark: #101010;
   --color-light: #ececec;
@@ -17,12 +18,7 @@ html {
 
 body {
   color: var(--color-light);
-  background: linear-gradient(
-      to right,
-      hsla(20, 30%, 10%, 0.95),
-      hsla(20, 80%, 2%, 0.95)
-    ),
-    url("assets/images/library-1834222_1920.jpg");
+  background: url("assets/images/noisy_gradient.svg");
   background-size: cover;
   background-position: center;
   font-family: "Bricolage Grotesque";
@@ -106,10 +102,48 @@ textarea {
 }
 
 button {
+  font-size: 1.25rem;
   padding: 1rem;
   border: none;
-  background-color: var(--accent-color);
+  background: linear-gradient(
+    var(--accent-color),
+    var(--accent-color) 0%,
+    var(--accent-color-hover) 100%
+  );
   color: var(--color-light);
   font-weight: 600;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(
+    var(--accent-color),
+    var(--accent-color) 100%,
+    var(--accent-color-hover) 100%
+  );
+}
+
+@keyframes identifier {
+  0% {
+    background: linear-gradient(
+      var(--accent-color),
+      var(--accent-color) 0%,
+      var(--accent-color-hover) 100%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      var(--accent-color),
+      var(--accent-color) 80%,
+      var(--accent-color-hover) 100%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      var(--accent-color),
+      var(--accent-color) 100%,
+      var(--accent-color-hover) 100%
+    );
+  }
 }
