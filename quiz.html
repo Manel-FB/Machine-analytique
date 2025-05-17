@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Page de Quiz</title>
+</head>
+<body>
+    <nav id="navbar">
+      <ul>
+        <a href="index.html">
+          <li>Accueil</li>
+        </a>
+        <a href="#navbar">
+          <li>Quiz</li>
+        </a>
+        <a href="bibliographie.html">
+          <li>Bibliographie</li>
+        </a>
+      </ul>
+    </nav>
+    <div id="container">
+        <div id="top">
+            <h1>Bienvennue sur la page du Quiz !</h1>
+            <p id="subtitle">Testez vos connaissances sur la Machine analytique.</p>
+        </div>
+        <div id="questions">
+            <div class="q1">
+                <label class="question_label" for="q1">1. En quel siècle a été conçue la Machine analytique ?</label>
+                    </br>
+                <input type="range" min="0" max="20" name="q1" id="q1" step="1" oninput="this.nextElementSibling.value = this.value">
+                <input type="number" value="0" id="q1_value" min="0" max="20" oninput="this.previousElementSibling.value = this.value">
+                    </br>
+            </div>
+            <div class="q2">
+                <label class="question_label" for="q2">2. Quel est le nouveau concept apporté par la Machine analytique ?</label>
+                    </br>
+                <input type="radio" name="q2" id="q2" value="1">
+                <label for="q2">La mémoire vive</label>
+                <input type="radio" name="q2" id="q2" value="2">
+                <label for="q2">Le calcul programmable</label>
+                <input type="radio" name="q2" id="q2" value="3">
+                <label for="q2">Le stockage sous forme de carte perforée</label>
+                <input type="radio" name="q2" id="q2" value="4">
+                <label for="q2">L'interface graphique</label>
+                    </br>
+            </div>
+            <div class="q3">
+                <label class="question_label" for="q3">3. Quel est/sont le(s) métier(s) de Charles Babbage ?</label>
+                    </br>
+                <input type="checkbox" name="q3" id="q3_1" value="1">
+                <label for="q2_1"> Peintre </label>
+                <input type="checkbox" name="q3" id="q3_2" value="2">
+                <label for="q2_2"> Mathématicien </label>
+                <input type="checkbox" name="q3" id="q3_3" value="3">
+                <label for="q2_3"> Ingénieur </label>
+                <input type="checkbox" name="q3" id="q3_4" value="4">
+                <label for="q2_4"> Physicien </label>
+                <input type="checkbox" name="q3" id="q3_5" value="5">
+                <label for="q2_5"> Développeur </label>
+                <input type="checkbox" name="q3" id="q3_6" value="6">
+                <label for="q2_6"> Inventeur </label>
+                    </br>
+            </div>
+            <div  class="q4">
+                
+                <label class="question_label" for="q4">4. Vrai ou Faux</label>
+                    </br>
+                <p id="q4_1_p"> Charles Babbage a inventé seul la Machine analytique
+                <input type="radio" id="q4_1_1" name="q4_1" value="1">
+                <label for="q4_1">Vrai</label>
+                <input type="radio" id="q4_1_2" name="q4_1" value="2">
+                <label for="q4_1">Faux</label>
+                </p>
+                    
+                
+                <p id="q4_2_p"> Avant la Machine analytique, les calculs étaient effectués manuellement
+                <input type="radio" id="q4_2_1" name="q4_2" value="1">
+                <label for="q4_2">Vrai</label>
+                <input type="radio" id="q4_2_2" name="q4_2" value="2">
+                <label for="q4_2">Faux</label>
+                </p>
+                
+                    </br>
+            </div>
+            <div  class="q5">
+                <label class="question_label" for="q5">5. Quelle(s) image(s) correspond(ent) à la Machine analytique ?</label>
+                    </br>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="q5_1" name="q5" value="1">
+                            <label for="q5">
+                                <img src="https://media.istockphoto.com/id/1034926174/fr/photo/moteur-de-voiture.jpg?s=612x612&w=0&k=20&c=07g2EJwuMYXfzddllTcYg6Js6FmkTUXQrh-cpL8xOQo=" />
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5_2" name="q5" value="2">
+                            <label for="q5">
+                                <img src="assets/images/machineAnalytiqueBabbage.webp" />
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5_3" name="q5" value="3">
+                            <label for="q5">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Analytical_Engine_%282290032530%29.jpg/250px-Analytical_Engine_%282290032530%29.jpg" />
+                            </label>
+                        </li>
+                    </ul>
+                
+                    </br>
+            </div>
+            <div class="q6">
+                <label  class="question_label" for="q6_1">6. Quelles sont les deux parties qui constituent la Machine analytique ?</label>
+                    </br>
+                <select name="q6_1">
+                    <option value="1">L'égrugeoir</option>
+                    <option value="2">Le moteur</option>
+                    <option value="3">Le moulin</option>
+                    <option value="4" selected></option>
+                </select> 
+                et
+                <select name="q6_2">
+                    <option value="1">La boutique</option>
+                    <option value="2">Le magasin</option>
+                    <option value="3">L'échoppe</option>
+                    <option value="4" selected></option>
+                </select> 
+                    </br>
+            </div>
+            <div class="q7">
+                <label class="question_label"  for="q7">7. Combien de type de carte perforée la Machine analytique utilise-t-elle ?</label>
+                    </br>
+                <input type="number" name="q7" id="q7" min="0" max="10" step="1">
+                    </br>
+            </div>
+            <div class="q8">
+                <label  class="question_label" for="q8">8. Veuillez remplir le tableau</label>
+                    </br>
+                <table>
+                    <tr>
+                        <th>Type de carte perforée</th>
+                        <th>Fonction</th>
+                    </tr>
+                    <tr>
+                        <td>Carte de nombres</td>
+                        <td>
+                            <select name="q8_1">
+                                <option value="1">Stocker des constantes</option>
+                                <option value="2">Transférer des valeurs</option>
+                                <option value="3">Contrôler les calculs conditionnels.</option>
+                                <option value="4" selected></option>
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Carte d'opérations</td>
+                        <td>
+                            <select name="q8_2">
+                                <option value="1">Stocker des constantes</option>
+                                <option value="2">Transférer des valeurs</option>
+                                <option value="3">Contrôler les calculs conditionnels.</option>
+                                <option value="4" selected></option>
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Carte de variables</td>
+                        <td>
+                            <select name="q8_3">
+                                <option value="1">Stocker des constantes</option>
+                                <option value="2">Transférer des valeurs</option>
+                                <option value="3">Contrôler les calculs conditionnels.</option>
+                                <option value="4" selected></option>
+                            </select> 
+                        </td>
+                    </tr>
+                </table>
+                    </br>
+            </div>
+            <div  class="q9">
+                <label class="question_label" for="q9">9. Quelle note d'Ada Lovelace est reconnue comme étant le premier algorithme ?</label>
+                    </br>
+                <input type="radio" name="q9" id="q9_1" value="1">
+                <label for="q9_1">La note A</label>
+                <input type="radio" name="q9" id="q9_2" value="2">
+                <label for="q9_2">La note W</label>
+                <input type="radio" name="q9" id="q9_3" value="3">
+                <label for="q9_3">La note D</label>
+                <input type="radio" name="q9" id="q9_4" value="4">
+                <label for="q9_4">La note G</label>
+                    </br>
+            </div>
+            
+            <button id="submit" onclick="checkQuizAnswers()">Verifier les réponses</button>
+        </div>
+        
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
