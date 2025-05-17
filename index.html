@@ -23,18 +23,10 @@
   <body>
     <nav>
       <ul>
-        <a href="index.html">
-          <li>Accueil</li>
-        </a>
-        <a href="quiz.html">
-          <li>Quiz</li>
-        </a>
-        <a href="bibliographie.html">
-          <li>Bibliographie</li>
-        </a>
-        <a href="contact_us.html">
-          <li>Contact</li>
-        </a>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="bibliographie.html">Bibliographie</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
       </ul>
     </nav>
     <main>
@@ -85,7 +77,71 @@
               </span>
             </p>
           </section>
-          <section></section>
+          <section class="archi">
+            <div class="background_archi"></div>
+
+            <div class="paragraph">
+              <span class="section-title">Architecture et fonctionnement</span>
+              <div class="content">
+                <p>La machine analytique est constituée de 2 parties :</p>
+                <p>
+                  le moulin (ou Mill en anglais) et le magasin (ou store en
+                  anglais). Le moulin est la partie dans laquelle sont exécutés
+                  les calculs, c'est l'unité de calcul (équivalent du
+                  processeur). Le magasin est la partie dans laquelle sont
+                  stockées les constantes et les variables (équivalent de la
+                  mémoire).
+                </p>
+                <p>
+                  La machine analytique possède de nombreuses caractéristiques
+                  essentielles que l'on retrouve dans l'ordinateur numérique
+                  moderne. Il était programmable à l'aide de cartes perforées,
+                  une idée empruntée au métier à tisser Jacquard utilisé pour
+                  tisser des motifs complexes dans les textiles. On compte 3
+                  types de ces cartes :
+                </p>
+              </div>
+              <ul class="cartes-list">
+                <li>
+                  Il y a les cartes d'opérations, donc +, -, × et ÷ et les
+                  cartes combinatoires, qui elles, permettent d'avancer ou de
+                  reculer dans la chaîne de cartes dans le lecteur selon une
+                  condition (un levier qui se lève quand il y a un changement de
+                  signe).
+                </li>
+                <li>
+                  Il y a aussi les cartes de nombres qui permettent de mettre
+                  des constantes dans le magasin.
+                </li>
+                <li>
+                  et les cartes variables qui permettent de transférer des
+                  valeurs du magasin vers le moulin ou des résultats d'opération
+                  dans le moulin vers le magasin.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="schema"></section>
+          <section class="lovelace">
+            <p class="paragraph">
+              <span class="section-title">Le role d'Ada Lovelace</span>
+              <span class="content">
+                Ada Lovelace, mathématicienne britannique et fille du célèbre
+                Lord Byron, a collaboré avec Babbage sur la machine analytique.
+                Elle a rédigé des notes détaillées sur son fonctionnement, en
+                particulier la note G qui est généralement admise comme étant le
+                premier algorithme destiné à être exécuté par une machine,
+                faisant d'elle la première “programmeuse” de l'histoire. Cet
+                algorithme a été originellement conçu pour calculer les nombres
+                de Bernoulli. 
+              </span>
+            </p>
+            <img
+              class="img-lovelace"
+              src="assets/images/ada.png"
+              alt="Portrait d'Ada Lovelace"
+            />
+          </section>
         </div>
       </div>
       <section></section>

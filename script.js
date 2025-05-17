@@ -30,8 +30,6 @@ const container = document.querySelector(".container");
 
 const sections = gsap.utils.toArray(".container section");
 const sectionWidth = sections[0].offsetWidth;
-console.log(sectionWidth);
-console.log(container.offsetWidth);
 
 const scrollSpeedCoeff = 0.85;
 

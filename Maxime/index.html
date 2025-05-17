@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Charles Babbage et la Machine analytique</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="credits.html">Crédits</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Your content here -->
+    </main>
+      <section class="landing">
+        <div class="landing-overlay"></div>
+        <h1>
+          Charles Babbage <br />
+          et la Machine analytique
+        </h1>
+        <a class="scroll-arrow" href="#first-section"
+          ><img src="assets/icons/down_arrow.svg"
+        /></a>
+      </section>
+      <div class="container">
+        <section id="first-section" class="babbage">
+          <p class="paragraph">
+            <span class="date">1791 - 1871</span>
+            <span class="section-title">Charles Babbage</span>
+            <span class="content">
+              Charles Babbage (1791-1871) est un mathématicien, inventeur et
+              ingénieur britannique, souvent considéré comme le "père de
+              l'ordinateur". Bien qu'il n'ait jamais terminé la construction
+              complète de cette machine de son vivant, ses idées ont
+              profondément influencé le développement de l'informatique.
+            </span>
+          </p>
+          <img
+            class="img-babbage"
+            src="assets/images/babbage_portrait.jpg"
+            alt="Portrait de Charles Babbage"
+          />
+        </section>
+      </div>
+      <!-- <a class="scroll-arrow" href="#second-section"
+          ><img src="assets/icons/down_arrow.svg"
+        /></a> -->
+      <div class="container">
+        <section id="second-section"  class="context">
+            
+            <div class="background_context"></div>
+            
+            <p class="paragraph">
+              <span class="section-title">Contexte historique</span>
+              <span class="content">
+                Au début du XIXe siècle, les calculs mathématiques étaient
+                effectués manuellement, ce qui entraînait de nombreuses erreurs.
+                Babbage, mathématicien britannique, avait déjà conçu la machine
+                à différences pour automatiser ces calculs. Cependant, il
+                envisagea une machine plus avancée : la machine analytique,
+                capable de réaliser des opérations complexes et d'être
+                programmée.
+              </span>
+            </p>
+        </section>
+      </div>
+      <div class="container">
+        <section class="archi">
+            
+            <div class="background_archi" ></div>
+          
+            <p class="paragraph">
+              <span class="section-title">Architecture et fonctionnement</span>
+              <span class="content">
+                La machine analytique est constituée de 2 parties, le moulin (ou Mill en anglais) et le magasin (ou store en anglais).
+                Le moulin est là où sont exécutés les calculs, c'est l'unité de calcul (équivalent du processeur), et le magasin est
+                l'endroit où sont stockées les constantes et les variables (équivalent de la mémoire). Les cartes perforées ont differents
+                roles dans cette machine, il en existe 3 types:
+              </span>
+            </p>
+       
+            <ul class="cartes-list">
+              <li class="cartes">
+                Il y a les cartes d'opérations, donc +, -, × et ÷ et les cartes combinatoires,
+                qui elles, permettent d'avancer ou de reculer dans la chaîne de cartes dans le lecteur
+                selon une condition (un levier qui se lève quand il y a un changement de signe).  
+              </li>
+              <li class="cartes">
+                Il y a aussi les cartes de nombres qui permettent de mettre des constantes dans le magasin.
+              </li>
+              <li class="cartes">
+                et les cartes variables qui permettent de transférer des valeurs du magasin vers le moulin
+                  ou des résultats d'opération dans le moulin vers le magasin.
+              </li>
+            </ul>
+           
+            
+        </section>
+        
+      </div>
+      <div>
+        <section class="schema">
+        </section>
+      </div>
+      <div class="container">
+        <section  class="lovelace">
+          <p class="paragraph">
+            <span class="section-title">Le role d'Ada Lovelace</span>
+            <span class="content">
+              Ada Lovelace, mathématicienne britannique et fille du célèbre Lord Byron,
+               a collaboré avec Babbage sur la machine analytique. Elle a rédigé des notes
+              détaillées sur son fonctionnement, en particulier la note G qui est généralement
+              admise comme étant le premier algorithme destiné à être exécuté par une
+              machine, faisant d'elle la première “programmeuse” de l'histoire.
+              Cet algorithme a été originellement conçu pour calculer les nombres de Bernoulli. 
+
+            </span>
+          </p>
+          <img
+            class="img-lovelace"
+            src="assets/images/ada.png"
+            alt="Portrait d'Ada Lovelace"
+          />
+        </section>
+      </div>
+      <div class="container">
+        <section  class="money">
+          <img
+            class="img-money"
+            src="assets/images/money.png"
+            alt="Sac d'argent manquant"
+          />
+          <p class="paragraph">
+            <span class="section-title">Une polémique financière</span>
+            <span class="content">
+              Une polémique majeure autour de la machine de Babbage concerne l'abandon de son
+              financement par le gouvernement britannique dans les années 1840. Bien qu’il ait
+              reçu des fonds importants pour construire sa machine différentielle, Babbage
+              modifia constamment ses plans, préférant concevoir une machine encore plus ambitieuse.
+              Le gouvernement, frustré par l’absence de résultats concrets, lui retira son soutien,
+              ce que Babbage dénonça comme un manque de vision. L’affaire entraînera des débats :
+              certains voyaient en lui un génie incompris, d’autres un inventeur imprudent.
+
+            </span>
+          </p>
+          
+        </section>
+      </div>
+      <div class="container">
+        <section  class="heritage">
+          <p class="paragraph">
+            <span class="section-title">Réalisation et héritage</span>
+            <span class="content">
+              Bien que Babbage n'ait jamais achevé la construction complète de la machine analytique,
+              son fils Henry a réussi à assembler partiellement certaines parties, notamment le moulin
+              et l'imprimante, entre 1880 et 90. Ces composants sont aujourd'hui exposés au Science
+              Museum de Londres. La machine analytique a jeté les bases de l'informatique moderne,
+              influençant des concepts tels que la programmation, la mémoire et l'architecture des ordinateurs.
+
+
+            </span>
+          </p>
+          
+        </section>
+      </div>
+      <div class="container">
+        <section  class="conclusion">
+          <p class="paragraph">
+            <span class="section-title">Conclusion</span>
+            <span class="content">
+              La machine analytique de Charles Babbage représente une avancée majeure dans l'histoire de l'informatique.
+              Elle incarne la transition entre les calculs manuels et les machines programmables, préfigurant les ordinateurs
+              que nous utilisons aujourd'hui. L'œuvre de Babbage, enrichie par les contributions d'Ada Lovelace, demeure
+              une source d'inspiration pour les scientifiques et les ingénieurs.
+
+
+
+            </span>
+          </p>
+          
+        </section>
+      </div>
+        
+      
+      
+    </main>
+    <!-- <div id="cursor-box"></div> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script> -->
+  </body>
+</html>

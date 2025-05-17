@@ -59,7 +59,7 @@ section {
 }
 
 .container {
-  width: 300vw;
+  width: 500vw;
   display: flex;
 }
 
@@ -87,7 +87,6 @@ h1 {
 
 .paragraph {
   display: flex;
-  /* height: fit-content; */
   flex-direction: column;
   max-width: 75ch;
 }
@@ -155,6 +154,107 @@ section.context .section-title {
 section.context .content {
   font-size: 1.25rem;
   font-family: "IBM Plex Mono";
+}
+
+section.archi {
+  background: linear-gradient(to right, #656565, #ffffff);
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+section.archi .paragraph {
+  mix-blend-mode: difference;
+  max-width: 65vw;
+  left: 0;
+}
+
+section.archi .content p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+section.archi .cartes-list {
+  margin-left: 3rem;
+  max-width: 55vw;
+}
+
+section.archi .img-schema {
+  width: 20rem;
+}
+
+section.schema {
+  background-image: url("assets/images/schema2.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+section.lovelace {
+  background: linear-gradient(#ffffff, #e9b953);
+  color: var(--color-dark);
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+section.lovelace .img-lovelace {
+  width: 30rem;
+}
+
+section.money {
+  background: linear-gradient(#e9b953, #525151);
+  color: var(--color-dark);
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+section.money .img-money {
+  width: 30rem;
+}
+
+section.heritage {
+  background-image: url("assets/images/vitrine.png");
+  background-position: center;
+  background-size: cover;
+  color: var(--color-dark);
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+section.heritage .paragraph {
+  padding: 2rem;
+  background-color: var(--color-light);
+}
+
+section.conclusion {
+  background-image: url("assets/images/landing_bg.png");
+  background-position: center;
+  background-size: cover;
+  color: var(--color-light);
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+section.conclusion .section-title {
+  font-family: "Glockenspiel", sans-serif;
+  font-size: 10rem;
+  font-weight: 600;
+}
+
+section.conclusion .paragraph {
+  text-align: center;
+  font-weight: bold;
 }
 
 #cursor-box {
