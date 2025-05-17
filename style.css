@@ -38,7 +38,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Glockenspiel", sans-serif;
+  font-family: "Glockenspiel", Gloock, sans-serif;
   background-image: url("assets/images/landing_bg.png");
   background-position: center;
   background-size: cover;

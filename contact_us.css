@@ -1,6 +1,6 @@
 :root {
-  --accent-color: #907cff;
-  --accent-color-hover: #7c55f0;
+  --accent-color: #7a57e4;
+  --accent-color-hover: #8e7cf3;
   --link-color: rgb(66, 170, 255);
   --color-dark: #101010;
   --color-light: #ececec;
@@ -105,45 +105,13 @@ button {
   font-size: 1.25rem;
   padding: 1rem;
   border: none;
-  background: linear-gradient(
-    var(--accent-color),
-    var(--accent-color) 0%,
-    var(--accent-color-hover) 100%
-  );
+  background-color: var(--accent-color);
   color: var(--color-light);
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 button:hover {
-  background: linear-gradient(
-    var(--accent-color),
-    var(--accent-color) 100%,
-    var(--accent-color-hover) 100%
-  );
-}
-
-@keyframes identifier {
-  0% {
-    background: linear-gradient(
-      var(--accent-color),
-      var(--accent-color) 0%,
-      var(--accent-color-hover) 100%
-    );
-  }
-  50% {
-    background: linear-gradient(
-      var(--accent-color),
-      var(--accent-color) 80%,
-      var(--accent-color-hover) 100%
-    );
-  }
-  100% {
-    background: linear-gradient(
-      var(--accent-color),
-      var(--accent-color) 100%,
-      var(--accent-color-hover) 100%
-    );
-  }
+  background-color: var(--accent-color-hover);
 }
