@@ -1,5 +1,6 @@
 :root {
-  --accent-color: #9785e6;
+  --accent-color: #7a57e4;
+  --accent-color-hover: #8e7cf3;
   --link-color: rgb(66, 170, 255);
   --color-dark: #101010;
   --color-light: #ececec;
@@ -17,12 +18,7 @@ html {
 
 body {
   color: var(--color-light);
-  background: linear-gradient(
-      to right,
-      hsla(20, 30%, 10%, 0.95),
-      hsla(20, 80%, 2%, 0.95)
-    ),
-    url("assets/images/library-1834222_1920.jpg");
+  background: url("assets/images/noisy_gradient.svg");
   background-size: cover;
   background-position: center;
   font-family: "Bricolage Grotesque";
@@ -106,10 +102,16 @@ textarea {
 }
 
 button {
+  font-size: 1.25rem;
   padding: 1rem;
   border: none;
   background-color: var(--accent-color);
   color: var(--color-light);
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--accent-color-hover);
 }
