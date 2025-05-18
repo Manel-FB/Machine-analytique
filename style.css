@@ -28,6 +28,10 @@ body {
   overflow-x: hidden;
 }
 
+nav {
+  mix-blend-mode: difference;
+}
+
 section {
   height: 100vh;
   height: 100svh;
@@ -59,8 +63,16 @@ section {
 }
 
 .container {
-  width: 500vw;
+  /* width: 600vw; */
   display: flex;
+  background-image: linear-gradient(to right, var(--color-dark), white);
+  background-size: cover;
+}
+
+.container > section {
+  width: calc(100vw + 1px);
+  margin-left: -1px;
+  flex-shrink: 0;
 }
 
 #first-section {
@@ -134,12 +146,19 @@ section.context > .paragraph {
 section.context .bg-img-wrapper {
   height: 100%;
   overflow: hidden;
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
-section.context .bg-img-wrapper > img {
-  width: 120%;
+section.context .bg-img-wrapper .bg-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0 -100px;
+}
+
+section.context .bg-img-wrapper .bg-img-container > img {
+  width: 100%;
 }
 
 section.context .paragraph {
@@ -157,7 +176,7 @@ section.context .content {
 }
 
 section.archi {
-  background: linear-gradient(to right, #656565, #ffffff);
+  background: linear-gradient(to right, #803d23, #ffffff);
   gap: 3rem;
   display: flex;
   align-items: center;
@@ -166,7 +185,7 @@ section.archi {
 }
 
 section.archi .paragraph {
-  mix-blend-mode: difference;
+  color: var(--color-dark);
   max-width: 65vw;
   left: 0;
 }
@@ -194,7 +213,7 @@ section.schema {
 }
 
 section.lovelace {
-  background: linear-gradient(#ffffff, #e9b953);
+  background: linear-gradient(to right, #ffffff, #e9b953);
   color: var(--color-dark);
   display: flex;
   gap: 3rem;
@@ -207,8 +226,8 @@ section.lovelace .img-lovelace {
 }
 
 section.money {
-  background: linear-gradient(#e9b953, #525151);
-  color: var(--color-dark);
+  background: linear-gradient(to right, #e9b953, #773f25);
+  color: var(--color-light);
   display: flex;
   gap: 3rem;
   align-items: center;
@@ -216,7 +235,8 @@ section.money {
 }
 
 section.money .img-money {
-  width: 30rem;
+  width: 20rem;
+  margin: 5rem;
 }
 
 section.heritage {
@@ -236,7 +256,7 @@ section.heritage .paragraph {
 }
 
 section.conclusion {
-  background-image: url("assets/images/landing_bg.png");
+  background-image: url("assets/images/conclusion_bg.jpg");
   background-position: center;
   background-size: cover;
   color: var(--color-light);
@@ -244,6 +264,22 @@ section.conclusion {
   gap: 3rem;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.conclusion-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+section.conclusion .paragraph {
+  position: relative;
+  z-index: 1;
 }
 
 section.conclusion .section-title {
