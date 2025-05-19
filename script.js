@@ -19,11 +19,6 @@ links.forEach((link) => {
   });
 });
 
-const scrollArrow = document.querySelector(".scroll-arrow");
-scrollArrow.addEventListener("mousedown", () => {
-  gsap.scrollTo("#first-section");
-});
-
 gsap.registerPlugin(ScrollTrigger);
 
 const container = document.querySelector(".container");
