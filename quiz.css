@@ -4,6 +4,7 @@ body {
   font-family: "Bricolage Grotesque";
   font-weight: 200;
   overflow-x: hidden;
+
 }
 
 #container {
@@ -22,9 +23,33 @@ body {
   font-size: 1.75rem;
   font-weight: 300;
 }
+button {
+  background: linear-gradient(90deg, #7f53ac 0%, #647dee 100%);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 500;
+  box-shadow: 0 4px 20px rgba(100, 125, 238, 0.15);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  margin: 1rem 0.5rem;
+  letter-spacing: 0.05em;
+}
 
+button:hover, button:focus {
+  background: linear-gradient(90deg, #647dee 0%, #7f53ac 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(100, 125, 238, 0.25);
+  outline: none;
+}
 button, input{
   cursor: pointer;
+}
+
+input,select{
+  font-size: 1.1rem;
 }
 .question_label {
   color: #9785e6;
@@ -35,7 +60,10 @@ button, input{
   display: flex;
   flex-direction: column;
 }
-
+.q4 p {
+  line-height: 1;
+  margin-bottom: 0;
+}
 
 .q5 ul {
   width: 100%;
@@ -106,7 +134,7 @@ label img {
 }
 
 #result::backdrop {
-  background: hsl(0 0 0 / .4);
+  background: hsl(0 0 0 / .7);
 }
 
 #emoji {

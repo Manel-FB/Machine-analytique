@@ -41,7 +41,6 @@
             />
             <input
               type="number"
-              value="0"
               id="q1_value"
               name="q1"
               min="0"
@@ -51,7 +50,7 @@
           </div>
         </div>
         <div class="q2">
-          <label class="question_label" for="q2">
+          <label class="question_label">
             2. Quel est le nouveau concept apporté par la Machine analytique ?
           </label>
           <div>
@@ -72,7 +71,7 @@
           </div>
         </div>
         <div class="q3">
-          <label class="question_label" for="q3">
+          <label class="question_label">
             3. Quel est/sont le(s) métier(s) de Charles Babbage ?
           </label>
           <div>
@@ -91,7 +90,7 @@
           </div>
         </div>
         <div class="q4">
-          <label class="question_label" for="q4">4. Vrai ou Faux</label>
+          <label class="question_label">4. Vrai ou Faux</label>
 
           <p id="q4_1_p">
             Charles Babbage a inventé seul la Machine analytique
@@ -115,7 +114,7 @@
           </p>
         </div>
         <div class="q5">
-          <label class="question_label" for="q5">
+          <label class="question_label">
             5. Quelle(s) image(s) correspond(ent) à la Machine analytique ?
           </label>
 
@@ -145,20 +144,20 @@
           </ul>
         </div>
         <div class="q6">
-          <label class="question_label" for="q6_1">
+          <label class="question_label">
             6. Quelles sont les deux parties qui constituent la Machine
             analytique ?
           </label>
 
           <div>
-            <select name="q6_1">
+            <select name="q6_1" id="q6_1">
               <option value="1">L'égrugeoir</option>
               <option value="2">Le moteur</option>
               <option value="3">Le moulin</option>
               <option value="4" selected></option>
             </select>
             et
-            <select name="q6_2">
+            <select name="q6_2" id="q6_2">
               <option value="1">La boutique</option>
               <option value="2">Le magasin</option>
               <option value="3">L'échoppe</option>
@@ -167,7 +166,7 @@
           </div>
         </div>
         <div class="q7">
-          <label class="question_label" for="q7">
+          <label class="question_label">
             7. Combien de type de carte perforée la Machine analytique
             utilise-t-elle ?
           </label>
@@ -188,12 +187,13 @@
               min="0" 
               max="10" 
               step="1"
+              oninput="this.previousElementSibling.value = this.value"
             />
              
           </div>
         </div>
         <div class="q8">
-          <label class="question_label" for="q8">
+          <label class="question_label">
             8. Veuillez remplir le tableau
           </label>
 
@@ -244,7 +244,7 @@
           </table>
         </div>
         <div class="q9">
-          <label class="question_label" for="q9">
+          <label class="question_label">
             9. Quelle note d'Ada Lovelace est reconnue comme étant le premier
             algorithme ?
           </label>

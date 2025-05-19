@@ -1,7 +1,8 @@
 const modal = document.getElementById("result");
 reset();
 
-
+let quiz_corrected = false;
+const submit_button = document.getElementById("submit");
 const correctAnswers = {
         q1: ["19"],
         q2: ["2"],
@@ -88,9 +89,22 @@ function correctQuizAnswers(){
             }
         });
     }
+
+    quiz_corrected = true;
+    submit_button.innerText = "Recommencer le quiz";
+    console.log("Quiz corrigé");
 }
 
-document.getElementById("submit").addEventListener("click", () => checkQuizAnswers());
+document.getElementById("submit").addEventListener("click", () => {
+    if (quiz_corrected) {
+        reset();
+        quiz_corrected = false;
+        submit_button.innerText = "Verifier les réponses";
+        window.location.reload();
+    } else {
+        checkQuizAnswers();
+    }
+});
 
 document.getElementById("close_dialog").addEventListener("click", () => {
     modal.close();
@@ -109,4 +123,21 @@ modal.addEventListener("click", (event) => {
     }
 })
 
-document.getElementById("view_correction").addEventListener("click", () =>  correctQuizAnswers());
+document.getElementById("view_correction").addEventListener("click", () => correctQuizAnswers());
+
+document.getElementById("share").addEventListener("click", () => {
+
+    const url = window.location.href;
+    const text = "J'ai fait le quiz sur la machine analytique ! Et vous ?";
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'Quiz sur la machine analytique',
+            text: text,
+            url: url
+        })
+        .catch((error) => console.log('Erreur de partage', error));
+    } else {
+        alert("Votre navigateur ne supporte pas le partage");
+    }
+});
