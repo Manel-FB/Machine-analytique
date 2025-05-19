@@ -30,80 +30,88 @@
           <label class="question_label" for="q1"
             >1. À quel siècle a été conçue la Machine analytique ?</label
           >
-          <input
-            type="range"
-            min="0"
-            max="20"
-            name="q1"
-            id="q1"
-            step="1"
-            oninput="this.nextElementSibling.value = this.value"
-          />
-          <input
-            type="number"
-            value="0"
-            id="q1_value"
-            min="0"
-            max="20"
-            oninput="this.previousElementSibling.value = this.value"
-          />
+          <div>
+            <input
+              type="range"
+              min="0"
+              max="20"
+              id="q1"
+              step="1"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <input
+              type="number"
+              value="0"
+              id="q1_value"
+              name="q1"
+              min="0"
+              max="20"
+              oninput="this.previousElementSibling.value = this.value"
+            />
+          </div>
         </div>
         <div class="q2">
           <label class="question_label" for="q2">
             2. Quel est le nouveau concept apporté par la Machine analytique ?
           </label>
           <div>
-            <input type="radio" name="q2" id="q2" value="1" />
-            <label for="q2">La mémoire vive</label>
+            <input type="radio" name="q2" id="q2_1" value="1" />
+            <label for="q2_1">La mémoire vive</label>
           </div>
           <div>
-            <input type="radio" name="q2" id="q2" value="2" />
-            <label for="q2">Le calcul programmable</label>
+            <input type="radio" name="q2" id="q2_2" value="2" />
+            <label for="q2_2">Le calcul programmable</label>
           </div>
           <div>
-            <input type="radio" name="q2" id="q2" value="3" />
-            <label for="q2">Le stockage sous forme de carte perforée</label>
+            <input type="radio" name="q2" id="q2_3" value="3" />
+            <label for="q2_3">Le stockage sous forme de carte perforée</label>
           </div>
           <div>
-            <input type="radio" name="q2" id="q2" value="4" />
-            <label for="q2">L'interface graphique</label>
+            <input type="radio" name="q2" id="q2_4" value="4" />
+            <label for="q2_4">L'interface graphique</label>
           </div>
         </div>
         <div class="q3">
           <label class="question_label" for="q3">
             3. Quel est/sont le(s) métier(s) de Charles Babbage ?
           </label>
-          <input type="checkbox" name="q3" id="q3_1" value="1" />
-          <label for="q2_1"> Peintre </label>
-          <input type="checkbox" name="q3" id="q3_2" value="2" />
-          <label for="q2_2"> Mathématicien </label>
-          <input type="checkbox" name="q3" id="q3_3" value="3" />
-          <label for="q2_3"> Ingénieur </label>
-          <input type="checkbox" name="q3" id="q3_4" value="4" />
-          <label for="q2_4"> Physicien </label>
-          <input type="checkbox" name="q3" id="q3_5" value="5" />
-          <label for="q2_5"> Développeur </label>
-          <input type="checkbox" name="q3" id="q3_6" value="6" />
-          <label for="q2_6"> Inventeur </label>
+          <div>
+            <input type="checkbox" name="q3" id="q3_1" value="1" />
+            <label for="q3_1"> Peintre </label>
+            <input type="checkbox" name="q3" id="q3_2" value="2" />
+            <label for="q3_2"> Mathématicien </label>
+            <input type="checkbox" name="q3" id="q3_3" value="3" />
+            <label for="q3_3"> Ingénieur </label>
+            <input type="checkbox" name="q3" id="q3_4" value="4" />
+            <label for="q3_4"> Physicien </label>
+            <input type="checkbox" name="q3" id="q3_5" value="5" />
+            <label for="q3_5"> Développeur </label>
+            <input type="checkbox" name="q3" id="q3_6" value="6" />
+            <label for="q3_6"> Inventeur </label>
+          </div>
         </div>
         <div class="q4">
           <label class="question_label" for="q4">4. Vrai ou Faux</label>
 
           <p id="q4_1_p">
             Charles Babbage a inventé seul la Machine analytique
-            <input type="radio" id="q4_1_1" name="q4_1" value="1" />
-            <label for="q4_1">Vrai</label>
-            <input type="radio" id="q4_1_2" name="q4_1" value="2" />
-            <label for="q4_1">Faux</label>
+            <div>
+              <input type="radio" id="q4_1_1" name="q4_1" value="1" />
+              <label for="q4_1_1">Vrai</label>
+              <input type="radio" id="q4_1_2" name="q4_1" value="2" />
+              <label for="q4_1_2">Faux</label>
+            </div>
           </p>
 
           <p id="q4_2_p">
             Avant la Machine analytique, les calculs étaient effectués
             manuellement
-            <input type="radio" id="q4_2_1" name="q4_2" value="1" />
-            <label for="q4_2">Vrai</label>
-            <input type="radio" id="q4_2_2" name="q4_2" value="2" />
-            <label for="q4_2">Faux</label>
+            <div>
+              <input type="radio" id="q4_2_1" name="q4_2" value="1" />
+              <label for="q4_2_1">Vrai</label>
+              <input type="radio" id="q4_2_2" name="q4_2" value="2" />
+              <label for="q4_2_2">Faux</label>
+            </div>
           </p>
         </div>
         <div class="q5">
@@ -114,7 +122,7 @@
           <ul>
             <li>
               <input type="checkbox" id="q5_1" name="q5" value="1" />
-              <label for="q5">
+              <label for="q5_1">
                 <img
                   src="https://media.istockphoto.com/id/1034926174/fr/photo/moteur-de-voiture.jpg?s=612x612&w=0&k=20&c=07g2EJwuMYXfzddllTcYg6Js6FmkTUXQrh-cpL8xOQo="
                 />
@@ -122,13 +130,13 @@
             </li>
             <li>
               <input type="checkbox" id="q5_2" name="q5" value="2" />
-              <label for="q5">
+              <label for="q5_2">
                 <img src="assets/images/machineAnalytiqueBabbage.webp" />
               </label>
             </li>
             <li>
               <input type="checkbox" id="q5_3" name="q5" value="3" />
-              <label for="q5">
+              <label for="q5_3">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Analytical_Engine_%282290032530%29.jpg/250px-Analytical_Engine_%282290032530%29.jpg"
                 />
@@ -142,19 +150,21 @@
             analytique ?
           </label>
 
-          <select name="q6_1">
-            <option value="1">L'égrugeoir</option>
-            <option value="2">Le moteur</option>
-            <option value="3">Le moulin</option>
-            <option value="4" selected></option>
-          </select>
-          et
-          <select name="q6_2">
-            <option value="1">La boutique</option>
-            <option value="2">Le magasin</option>
-            <option value="3">L'échoppe</option>
-            <option value="4" selected></option>
-          </select>
+          <div>
+            <select name="q6_1">
+              <option value="1">L'égrugeoir</option>
+              <option value="2">Le moteur</option>
+              <option value="3">Le moulin</option>
+              <option value="4" selected></option>
+            </select>
+            et
+            <select name="q6_2">
+              <option value="1">La boutique</option>
+              <option value="2">Le magasin</option>
+              <option value="3">L'échoppe</option>
+              <option value="4" selected></option>
+            </select>
+          </div>
         </div>
         <div class="q7">
           <label class="question_label" for="q7">
@@ -162,7 +172,25 @@
             utilise-t-elle ?
           </label>
 
-          <input type="number" name="q7" id="q7" min="0" max="10" step="1" />
+          <div>
+            <input
+              type="range"
+              min="0"
+              max="10"
+              id="q7"
+              step="1"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <input 
+              type="number" 
+              name="q7" 
+              id="q7_i"
+              min="0" 
+              max="10" 
+              step="1"
+            />
+             
+          </div>
         </div>
         <div class="q8">
           <label class="question_label" for="q8">
@@ -221,19 +249,29 @@
             algorithme ?
           </label>
 
-          <input type="radio" name="q9" id="q9_1" value="1" />
-          <label for="q9_1">La note A</label>
-          <input type="radio" name="q9" id="q9_2" value="2" />
-          <label for="q9_2">La note W</label>
-          <input type="radio" name="q9" id="q9_3" value="3" />
-          <label for="q9_3">La note D</label>
-          <input type="radio" name="q9" id="q9_4" value="4" />
-          <label for="q9_4">La note G</label>
+          <div>
+            <input type="radio" name="q9" id="q9_1" value="1" />
+            <label for="q9_1">La note A</label>
+            <input type="radio" name="q9" id="q9_2" value="2" />
+            <label for="q9_2">La note W</label>
+            <input type="radio" name="q9" id="q9_3" value="3" />
+            <label for="q9_3">La note D</label>
+            <input type="radio" name="q9" id="q9_4" value="4" />
+            <label for="q9_4">La note G</label>
+          </div>
         </div>
 
-        <button id="submit" onclick="checkQuizAnswers()">
+        <button id="submit">
           Verifier les réponses
         </button>
+        <dialog id="result">
+          <h2 id="result_title">Votre Score</h2>
+          <p id="result_text"></p>
+          <p id="emoji"></p>
+          <button id="close_dialog">Fermer</button>
+          <button id="view_correction">Voir la Correction</button>
+          <button id="share"> Partagez votre score</button>
+        </dialog>
       </div>
     </div>
     <script src="quiz.js"></script>
